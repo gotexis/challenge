@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "app",
+      "common"
+    ]
+  },
+  "scripts": {
+    "dev": "run-p dev:api dev:app",
+    "dev:app": "cd app && yarn start",
+    "dev:api": "cd api && yarn dev",
+    "test": "run-p test:api test:app",
+    "test:app": "cd app && yarn test",
+    "test:api": "cd api && yarn test"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "@types/jest": "^26.0.23",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.4.4",
+    "eslint": "^7.26.0",
+    "prettier": "^2.1.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4"
+  }
+}
