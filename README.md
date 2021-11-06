@@ -1,4 +1,4 @@
-# Exis' full-stack starter
+# Socket.IO, fullstack, typescript, Frontend / Backend testing
 
 ## How to run
 
